@@ -275,7 +275,7 @@ DEPENDENCIES
   active_storage_validations (= 0.8.2)
   bcrypt (= 3.1.11)
   bootsnap (>= 1.4.4)
-  bootstrap-sass (= 3.4.1)
+  bootstrap-sass
   bootstrap-will_paginate (= 1.0.0)
   bullet
   byebug

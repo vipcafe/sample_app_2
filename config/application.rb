@@ -33,7 +33,10 @@ module SampleApp
     end if File.exists?(env_file)
     # config/application.rb
     config.assets.initialize_on_precompile = false
-end
+
+    require 'sprockets/railtie'
+        config.assets.initialize_on_precompile = false
+    end
 
 
   end

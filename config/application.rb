@@ -24,8 +24,6 @@ module SampleApp
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
-    # config/application.rb
-    config.assets.initialize_on_precompile = false
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     config.before_configuration do
@@ -33,6 +31,8 @@ module SampleApp
     YAML.load(File.open(env_file)).each do |key, value|
     ENV[key.to_s] = value
     end if File.exists?(env_file)
+    # config/application.rb
+    config.assets.initialize_on_precompile = false
 end
 
 

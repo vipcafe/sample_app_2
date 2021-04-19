@@ -19,6 +19,8 @@ class User < ApplicationRecord
 	validates :name, presence: true
 	validates :password, presence: true, length: {minimum: 6} , allow_nil: true
 
+	User.joins(:microposts, :relationships)
+
 	class << self
 		def new_token
 			SecureRandom.urlsafe_base64

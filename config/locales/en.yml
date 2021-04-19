@@ -1,0 +1,51 @@
+en:
+  layouts:
+    navbar:
+      english : " English"
+      vietnames : "Vietnames"
+      home : "Home"
+      help : "Help"
+      login : "Login"
+      signup : "Signup"
+      profile : "Profile"
+      logout: "Logout"
+      setting: "setting"
+      users: "Users"
+
+
+  static_pages:
+    home:
+      welcome: "Welcome to the Sample App"
+      detail: This is the home page for the %{href} sample application.
+      detail_link: "Ruby on Rails Tutorial "
+      sign_up_now : "Sign Up Now !"
+
+  users:
+    new:
+      name: Name
+      email: Email
+      password: Password
+      confirmation: Confirmation
+      signup: Signup
+    form:
+      name: Name
+      email: Email
+      password: Password
+      confirmation: Confirmation
+    edit:
+      submit: "Save changes"
+      update: "Update your profile"
+    index:
+      all_user: "ALL USER"
+      delete: "Delete"
+
+  sessions:
+    new:
+      login_h1 : "LOGIN"
+      password: "Password"
+      login: "Login"
+      new_user: "New user ? %{href}"
+      sign_up_now: "signup now!!!"
+      remenber_me: "Remember me on this computer"
+
+

@@ -1,0 +1,35 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+	<div class="container">
+		<%= link_to "sample app", "#", id: "logo" %> 
+		<nav>
+			<ul class="nav navbar-nav navbar-right">
+				<li class = "local"><%= link_to t(".english"), locale: :en %></li>
+				<li class = "local"><%= link_to t(".vietnames"), locale: :vi %></li>
+				<li><%= link_to t(".home"), root_path %></li> 
+				<li><%= link_to t(".help"), static_pages_help_path %></li>
+
+				<% if logged_in? %>
+					<div class="btn-group">
+					  <button type="button" class="btn btn-success" style="height: 50px ;min-width: 100px"><%= @current_user.name %> </button>
+					  <button type="button" class="btn btn-success dropdown-toggle" style="height: 50px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><%= link_to t(".profile") , user_path(id: current_user) %></li>
+					    <li><%= link_to t(".setting"), edit_user_path(current_user) %></li>
+					    <li><%= link_to t(".users"), users_path %></li>
+					    <li role="separator" class="divider"></li>
+					    <li> <%= link_to t(".logout") , logout_path, method: :delete %></li>
+					  </ul>
+					</div>
+				
+				<% else %>
+					<li class = "btn-navbar btn-success" ><%= link_to t(".login"), login_path %></li>
+					<li class = "btn-navbar btn-danger"><%= link_to t(".signup"), signup_path  %></li>
+				<% end %>  
+				
+			</ul> 
+		</nav>
+	</div>
+</header>

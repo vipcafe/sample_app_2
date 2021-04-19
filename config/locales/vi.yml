@@ -1,0 +1,53 @@
+vi:
+  layouts:
+    navbar:
+      english : "Tiếng Anh"
+      vietnames : "Tiếng Việt"
+      home : "Trang chủ"
+      help : "Trợ giúp"
+      login : "Đăng Nhập"
+      signup : "Đăng Ký"
+      profile : "Thông Tin"
+      logout: "Đăng xuất"
+      setting: "Cài đặt"
+      users: "Người dùng"
+
+  static_pages:
+    home:
+      welcome: "Chào Mừng đến với Sample App"
+      detail: Đây là trang chủ của <a href="#">Ruby on Rails Tutorial </a> với simple app.
+      detail_link: "Ruby on Rails Tutorial "
+      sign_up_now : "Đăng Ký Ngay"
+  users:
+    new:
+      name: Tên đăng nhập
+      email: email
+      password: Mật khẩu
+      confirmation: Xác nhận mật khẩu 
+      signup: "Đăng ký"
+    form:
+      name: Tên đăng nhập
+      email: email
+      password: Mật khẩu
+      confirmation: Xác nhận mật khẩu
+    edit:
+      submit: "Thay đổi"
+      update: "Chỉnh sữa thông tin cá nhân"
+    index:
+      all_user: "Danh sách USER"
+      delete: "Xoá"
+
+  sessions:
+    new:
+      login_h1 : "ĐĂNG NHẬP"
+      password: "Mật Khẩu"
+      login: "Đăng Nhập"
+      new_user: "Tài khoảng mới ? %{href}"
+      sign_up_now: "Đăng ký ngay "
+      remenber_me: "Ghi nhớ trên thiết bị này "
+
+
+
+
+  
+      

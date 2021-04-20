@@ -66,7 +66,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (10.2.4.0)
       execjs
-    bcrypt (3.1.11)
+    bcrypt (3.1.12)
     bindex (0.8.1)
     bootsnap (1.7.3)
       msgpack (~> 1.0)
@@ -273,7 +273,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_storage_validations (= 0.8.2)
-  bcrypt (= 3.1.11)
+  bcrypt (= 3.1.12)
   bootsnap (>= 1.4.4)
   bootstrap-sass
   bootstrap-will_paginate (= 1.0.0)

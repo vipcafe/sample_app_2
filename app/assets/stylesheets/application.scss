@@ -17,93 +17,92 @@
  */
 
 
-/* universal */
-
-	
-body { 
-padding-top: 60px;}
-
-section {
- overflow: auto;
-}
-
-textarea {
-	resize: vertical;
-}
-
-.center {
-	text-align: center;
-}
-
-.center h1 {
-	margin-bottom: 10px;
-}
+ /* universal */
 
 
-#logo {
-	float: left;
-	margin-right: 10px;
-	font-size: 1.7em;
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-	padding-top: 9px;
-	font-weight: bold;
-}
+ body { 
+ 	padding-top: 60px;}
 
-#logo:hover {
-	color: #fff;
-	text-decoration: none;
-}
-.local {
-	color: white;
-	font-weight: bold;
-}
+ 	section {
+ 		overflow: auto;
+ 	}
 
-/* forms */
+ 	textarea {
+ 		resize: vertical;
+ 	}
 
-#error_explanation {
-	color: red;
-	ul {
-		color: red;
-		margin: 0 0 30px;
-	}
-}
-.field_with_errors {
-	@extend .has-error;
-	.form-control {
-		color: #dc3545;
-	}
-}
+ 	.center {
+ 		text-align: center;
+ 	}
 
-.navbar-inverse .navbar-nav > li > a {
-    color: white;
-}
+ 	.center h1 {
+ 		margin-bottom: 10px;
+ 	}
 
-.btn-navbar {
-	text-align: center;
-	min-width: 130px;
-	margin-right: 3px;
-}
 
- 
-/* sidebar */
-aside {
- section.user_info {
- margin-top: 20px;
- }
- section {
- padding: 10px 0;
- margin-top: 20px;
- &:first-child {
- border: 0;
- padding-top: 0;
- }
- span {
- display: block;
- margin-bottom: 3px;
- line-height: 1;
- }
-}
-}
+ 	#logo {
+ 		float: left;
+ 		margin-right: 10px;
+ 		font-size: 1.7em;
+ 		color: #fff;	
+ 		text-transform: uppercase;
+ 		letter-spacing: -1px;
+ 		padding-top: 9px;
+ 		font-weight: bold;
+ 	}
+
+ 	#logo:hover {
+ 		color: #fff;
+ 		text-decoration: none;
+ 	}
+ 	.local {
+ 		color: white;
+ 		font-weight: bold;
+ 	}
+
+ 	/* forms */
+
+ 	#error_explanation {
+ 		color: red;
+ 		ul {
+ 			color: red;
+ 			margin: 0 0 30px;
+ 		}
+ 	}
+ 	.field_with_errors {
+ 		@extend .has-error .form-control {
+ 			color: #dc3545;
+ 		}
+ 	}
+
+ 	.navbar-inverse .navbar-nav > li > a {
+ 		color: white;
+ 	}
+
+ 	.btn-navbar {
+ 		text-align: center;
+ 		min-width: 130px;
+ 		margin-right: 3px;
+ 	}
+
+
+ 	/* sidebar */
+ 	aside {
+ 		section.user_info {
+ 			margin-top: 20px;
+ 		}
+ 		section {
+ 			padding: 10px 0;
+ 			margin-top: 20px;
+ 			&:first-child {
+ 				border: 0;
+ 				padding-top: 0;
+ 			}
+ 			span {
+ 				display: block;
+ 				margin-bottom: 3px;
+ 				line-height: 1;
+ 			}
+ 		}
+ 	}
 

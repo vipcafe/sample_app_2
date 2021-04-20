@@ -13,7 +13,7 @@ gem "jbuilder", "~> 2.7"
 gem "rails-i18n"
 gem "bootstrap-sass"
 gem "bootsnap", ">= 1.4.4", require: false
-gem "bcrypt", "3.1.11"
+gem "bcrypt", "3.1.12"
 gem "config"
 gem "faker", "2.1.2"
 gem "will_paginate", "3.1.8"

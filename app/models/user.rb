@@ -1,8 +1,8 @@
 class User < ApplicationRecord
+	has_secure_password
 	attr_accessor :remember_token, :activation_token, :reset_token
 	before_save :downcase_email
 	before_create :create_activation_digest
-	has_secure_password
 	has_many :microposts, dependent: :destroy
 	has_many :active_relationships, class_name: Relationship.name,
 	foreign_key: :follower_id, dependent: :destroy
@@ -11,6 +11,7 @@ class User < ApplicationRecord
 	
 	has_many :following, through: :active_relationships, source: :followed
  	has_many :followers, through: :passive_relationships, source: :follower
+
 	
 
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

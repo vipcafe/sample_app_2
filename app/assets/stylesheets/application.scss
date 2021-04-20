@@ -69,11 +69,10 @@
  			margin: 0 0 30px;
  		}
  	}
- 	.field_with_errors {
- 		@extend .has-error .form-control {
- 			color: #dc3545;
+ 	.field_with_errors { 
+ 		.form-control {
+ 			color: red; }
  		}
- 	}
 
  	.navbar-inverse .navbar-nav > li > a {
  		color: white;
